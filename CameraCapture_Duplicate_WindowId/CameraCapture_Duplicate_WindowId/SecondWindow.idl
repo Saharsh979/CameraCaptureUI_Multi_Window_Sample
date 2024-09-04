@@ -1,0 +1,9 @@
+namespace CameraCapture_Duplicate_WindowId
+{
+    [default_interface]
+    runtimeclass SecondWindow : Microsoft.UI.Xaml.Window
+    {
+        SecondWindow();
+        Int32 MyProperty;
+    }
+}

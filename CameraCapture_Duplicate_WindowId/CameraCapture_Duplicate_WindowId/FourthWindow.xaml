@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="CameraCapture_Duplicate_WindowId.FourthWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CameraCapture_Duplicate_WindowId"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Window 4">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!-- TextBlock for heading -->
+        <TextBlock Text="Window 4"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                FontSize="48"
+                FontWeight="Bold"
+                Foreground="White"
+                Margin="20" />
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid>
+                <!-- Define the Grid with 3 columns -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Define Buttons and place them in columns -->
+                <Button x:Name="myButton_4" Click="myButton_Click_4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="50">Button 1</Button>
+                <Button x:Name="myButton1_4" Click="myButton_Click1_4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="50">Button 2</Button>
+                <Button x:Name="myButton2_4" Click="myButton_Click2_4" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="50">Button 3</Button>
+                <Button x:Name="myButton3_4" Click="myButton_Click3_4" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="50">Button 4</Button>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
